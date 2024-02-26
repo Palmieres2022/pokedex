@@ -30,6 +30,7 @@ header {
 }
 input{
     transition: transform 0.3s;
+    color: var(--color-card);
 }
 input:hover{
     transform: scale(1.05);
@@ -65,6 +66,7 @@ input[type="text"]::placeholder{
 }
 .card ul{
     background-color: var(--color-card);
+    width: 145px;
 }
 .card_name{
     margin-bottom: 10px;
@@ -99,4 +101,16 @@ input[type="text"]::placeholder{
 li {
     color: var(--color-card);
 }
-
+/* Media query para dispositivos com largura menor que 800px */
+@media (max-width: 800px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+    .search-container input {
+        width: 290px;
+    }
+  
+    
+}
