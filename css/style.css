@@ -1,0 +1,102 @@
+/* Reset CSS básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--color-primary);
+}
+:root{
+    --color-primary:#262835;
+    --color-card:#FFFFFF;
+    --color-info:#EFEFEF;
+}
+/* Estilos para o cabeçalho */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+.logo-container img {
+    max-width: 200px;
+}
+.search-container {
+    margin-top: 20px;
+}
+.search-container input {
+    width: 600px;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+input{
+    transition: transform 0.3s;
+}
+input:hover{
+    transform: scale(1.05);
+}
+input[type="text"]::placeholder{
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--color-card);
+}
+/* Estilos para os cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: auto;
+    width: 600px;
+}
+.card {
+    background-color: var(--color-card);
+    padding: 10px;
+    border-radius: 8px;
+    width: 290px;
+    height:157px;
+    display: flex;
+    transition: transform 0.3s;
+    cursor: pointer;
+    
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card ul{
+    background-color: var(--color-card);
+}
+.card_name{
+    margin-bottom: 10px;
+    background-color: var(--color-card);
+    color: black;
+    list-style: none;
+    font-size: 22px;
+    font-family: Roboto;
+    font-weight: 900;
+    font-style: italic;
+}
+.card_type, .card_ability{
+    background-color: var(--color-info);
+    width: 55px;
+    height: 16px;
+    border-radius: 32px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 10px;
+    color:var(--color-primary);
+    list-style: none;
+}
+.card img {
+    width: 110px;
+    height: 90px;
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: var(--color-card);
+}
+li {
+    color: var(--color-card);
+}
+
