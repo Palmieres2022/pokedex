@@ -1,73 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokedex</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="logo-container">
-            <img src="img/logo.svg" alt="Logotipo do Site">
-        </div>
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="header__title">
+          <img src="img/logo.png" alt="Logotipo do Site" />
+          Pokedex
+        </h1>
+
         <div class="search-container">
-            <input type="text" placeholder="Pesquisar Pokemon...">
+          <input
+            class="search-container__input"
+            type="text"
+            placeholder="Pesquisar Pokemon..."
+          />
+          <span class="material-symbols-outlined"> search </span>
         </div>
-    </header>
-    <main>
-        <section class="cards-container">
-            <div class="card">
-                <ul class="card_info">
-                    <li class="card_name">Bulbasaur</li>
-                    <li class="card_type">Grass</li>
-                    <li class="card_ability">Poison</li>
-                </ul>
-                <img src="./img/pokemon_bulbasaur.svg" alt="Imagem Pokemon">
+      </header>
+
+      <main class="main">
+        <ul class="cards">
+          <li class="card">
+            <div class="card__info">
+              <h2 class="card__name">Bulbasaur</h2>
+              <span class="card__type">Grass</span>
+              <span class="card__type">Poison</span>
             </div>
-            <div class="card">
-                <ul class="card_info">
-                    <li class="card_name">Ivysaur</li>
-                    <li class="card_type">Grass</li>
-                    <li class="card_ability">Poison</li>
-                </ul>
-                <img src="./img/pokemon_ivysaur.svg" alt="Imagem Pokemon">
-            </div>
-            <div class="card">
-                <ul class="card_info">
-                    <li class="card_name">Venusaur</li>
-                    <li class="card_type">Grass</li>
-                    <li class="card_ability">Poison</li>
-                </ul>
-                <img src="./img/pokemon_venusaur.svg" alt="Imagem Pokemon">
-            </div>
-            <div class="card">
-                <ul class="card_info">
-                    <li class="card_name">Charmander</li>
-                    <li class="card_type">Fire</li>
-                </ul>
-                <img src="./img/pokemon_charmander.svg" alt="Imagem Pokemon">
-            </div>
-            <div class="card">
-                <ul class="card_info">
-                    <li class="card_name">Charmelon</li>
-                    <li class="card_type">Fire</li>
-                </ul>
-                <img src="./img/pokemon_charmelon.svg" alt="Imagem Pokemon">
-            </div>
-            <div class="card">
-                <ul class="card_info">
-                    <li class="card_name">Charizard</li>
-                    <li class="card_type">Fire</li>
-                </ul>
-                <img src="./img/pokemon_charizard.svg" alt="Imagem Pokemon">
-            </div>
-        </section>
-    </main>
-</body>
+            <img
+              class="card__image"
+              src="./img/bulbasaur.png"
+              alt="Imagem Pokemon"
+            />
+          </li>
+          <div class="card">
+            <ul class="card__info">
+              <li class="card__name">Ivysaur</li>
+              <li class="card__type">Grass</li>
+              <li class="card__type">Poison</li>
+            </ul>
+            <img
+              class="card__image"
+              src="./img/ivysaur.png"
+              alt="Imagem Pokemon"
+            />
+          </div>
+          <div class="card">
+            <ul class="card__info">
+              <li class="card__name">Venusaur</li>
+              <li class="card__type">Grass</li>
+              <li class="card__type">Poison</li>
+            </ul>
+            <img
+              class="card__image"
+              src="./img/venusaur.png"
+              alt="Imagem Pokemon"
+            />
+          </div>
+          <div class="card">
+            <ul class="card__info">
+              <li class="card__name">Charmander</li>
+              <li class="card__type">Fire</li>
+            </ul>
+            <img
+              class="card__image"
+              src="./img/charmander.png"
+              alt="Imagem Pokemon"
+            />
+          </div>
+          <div class="card">
+            <ul class="card__info">
+              <li class="card__name">Charmelon</li>
+              <li class="card__type">Fire</li>
+            </ul>
+            <img
+              class="card__image"
+              src="./img/charmeleon.png"
+              alt="Imagem Pokemon"
+            />
+          </div>
+          <div class="card">
+            <ul class="card__info">
+              <li class="card__name">Charizard</li>
+              <li class="card__type">Fire</li>
+            </ul>
+            <img
+              class="card__image"
+              src="./img/charizard.png"
+              alt="Imagem Pokemon"
+            />
+          </div>
+        </ul>
+      </main>
+    </div>
+  </body>
 </html>
